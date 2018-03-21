@@ -1,0 +1,28 @@
+{
+  "name": "ys-pg-koa-smart-router",
+  "version": "1.0.7",
+  "description": "ys-mutify framework for smart-koa-router",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_ENV=dev node test/index.js -- --access=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:yskit/ys-pg-koa-smart-router.git"
+  },
+  "devDependencies": {
+    "ys-fw-koa": "^1.0.1",
+    "ys-mutify": "^1.0.0"
+  },
+  "plugin": {
+    "name": "router"
+  },
+  "dependencies": {
+    "smart-koa-router": "0.0.1",
+    "ys-utils": "^1.0.10"
+  },
+  "files": [
+    "app.js",
+    "ys.command.js"
+  ]
+}
