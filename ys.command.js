@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const { spawnSync } = require('child_process');
 
-exports.use = `{ enable: true, package: 'ys-pg-koa-smart-router' }`;
+exports.use = `{ enable: true, package: 'ys-pg-koa-smart-router', , agent: 'agent' }`;
 exports.common = `{
   prefix: '/',
   methods: ['HEAD', 'OPTIONS', 'GET', 'PUT', 'PATCH', 'POST', 'DELETE'],
