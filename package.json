@@ -1,6 +1,6 @@
 {
   "name": "ys-pg-koa-smart-router",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ys-mutify framework for smart-koa-router",
   "main": "app.js",
   "scripts": {
@@ -19,11 +19,12 @@
   },
   "dependencies": {
     "debug": "^3.1.0",
+    "fs-extra": "^5.0.0",
     "smart-koa-router": "0.0.1",
     "ys-utils": "^1.0.10"
   },
   "files": [
     "app.js",
-    "ys.command.js"
+    ".ys.command.js"
   ]
 }
