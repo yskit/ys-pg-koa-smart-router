@@ -16,9 +16,23 @@ module.exports = class CommanderModule {
 
   ['env:common']() {
     return {
-      prefix: '/',
-      methods: ['HEAD', 'OPTIONS', 'GET', 'PUT', 'PATCH', 'POST', 'DELETE'],
-      allowCross: false
+      document: {
+        title: 'Swagger Demo',
+        version: '1.0.0',
+        description: '演示如何使用Swagger-UI来展示API文档。**所有的description都支持markdown语法。**',
+        host: '127.0.0.1:8444',
+        basePath: '/',
+        tags: {
+          category: '分类相关',
+          article: '文章相关'
+        },
+        // schemes: ['http', 'https', 'ws', 'wss'],
+        // optional external docs, for example: wiki
+        externalDocs: {
+          description: '关于Router', // 支持markdown
+          url: 'http://cnpm.51.nb/package/@u51/router'
+        }
+      }
     }
   }
 
