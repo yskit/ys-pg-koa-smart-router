@@ -60,7 +60,7 @@ module.exports = class CommanderModule {
       throw new Error(`file '${routerFilePath}' is already exists.`);
     }
     const data = `module.exports = (app, router) => {
-      router.get('/', app.controller.index);
+      router.get('/', app.controller.index.common);
     }`;
     fs.writeFileSync(routerFilePath, this.beautiful(data), 'utf8');
     this.thread.on('beforeRollback', async () => {
