@@ -5,7 +5,7 @@ const util = require('ys-utils');
 const debug = require('debug')('pg-koa-smart-router');
 
 module.exports = (app, configs) => {
-  app.on('serverWillStart', () => {
+  app.on('serverRouterWrapped', () => {
     const routerPath = path.resolve(app.options.baseDir, 'app/router.js');
     if (!fs.existsSync(routerPath)) {
       throw new Error(`router of '${routerPath}' must be exists`);
